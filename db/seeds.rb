@@ -7,12 +7,8 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 john = User.create(first_name: 'John', last_name: 'Doe', email: 'svrrealists@gmail.com', password: 'Passw0rd!', password_confirmation: 'Passw0rd!')
-
 jane = User.create(first_name: 'Jane', last_name: 'Doe', email: 'janedoe@fakemail.com', password: 'Passw0rd!', password_confirmation: 'Passw0rd!')
-
-bill = User.create(first_name: 'Bill',
-last_name: 'Ruby', email: 'bill@fakemail.com',
-password: 'Passw0rd!', password_confirmation: 'Passw0rd!')
+bill = User.create(first_name: 'Bill', last_name: 'Ruby', email: 'bill@fakemail.com', password: 'Passw0rd!', password_confirmation: 'Passw0rd!')
 
 soccer = Album.create(title: "Baseball", image: "http://s3.amazonaws.com/codecademy-content/courses/rails-auth/img/baseball-1.jpg")
 Photo.create(caption: "Best hitter on the team.", image: "http://s3.amazonaws.com/codecademy-content/courses/rails-auth/img/baseball-2.jpg", album_id: soccer.id)
